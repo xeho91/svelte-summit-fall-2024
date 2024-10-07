@@ -15,3 +15,7 @@ src: ./the-solution/indexer.md
 ---
 src: ./the-solution/legacy-api.md
 ---
+
+---
+src: ./the-solution/transformation.md
+---
