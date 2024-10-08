@@ -213,7 +213,7 @@ const { Story, meta } = defineMeta({
 
 <v-clicks>
 
-![defineMeta leading comment as component description](/define-meta-comment.png){class="fixed top-10 right-10 w-[auto] h-[400px]"
+![defineMeta leading comment as component description](/define-meta-comment.png){class="fixed top-10 right-10 w-[auto] h-[950px]"
 
 <div>
 <div class="fixed top-[70px] left-[270px] w-[460px] h-[30px] border-2 border-secondary bg-secondary bg-op-10"></div>
@@ -579,7 +579,6 @@ class: bg-emerald-900
 
 # Transformation - create runtime stories `export`s
 
-````md magic-move
 ```js
 // COMPILED: Button.stories.svelte
 
@@ -590,54 +589,20 @@ function Button_stories($$anchor, $$props) {
 }
 
 export default meta;
+
+import { createRuntimeStories } from "@storybook/addon-svelte-csf/internal/create-runtime-stories"; // [!code ++]
+
+const __stories = createRuntimeStories(Button_stories, meta); // [!code ++]
+
+export const Primary = __stories["Primary"]; // [!code ++]
+export const Secondary = __stories["Secondary"]; // [!code ++]
+export const Large = __stories["Large"]; // [!code ++]
+export const Small = __stories["Small"]; // [!code ++]
+export const LongContent = __stories["LongContent"]; // [!code ++]
 ```
-```js {11}
-// COMPILED: Button.stories.svelte
 
-export const { Story, meta } = defineMeta({ /* ... */ });
-
-function Button_stories($$anchor, $$props) {
-    // ...
-}
-
-export default meta;
-
-import { createRuntimeStories } from "@storybook/addon-svelte-csf/internal/create-runtime-stories";
-```
-```js {13|5,13|3,5,13}
-// COMPILED: Button.stories.svelte
-
-export const { Story, meta } = defineMeta({ /* ... */ });
-
-function Button_stories($$anchor, $$props) {
-    // ...
-}
-
-export default meta;
-
-import { createRuntimeStories } from "@storybook/addon-svelte-csf/internal/create-runtime-stories";
-
-const __stories = createRuntimeStories(Button_stories, meta);
-```
-```js {13,15-19}
-// COMPILED: Button.stories.svelte
-
-export const { Story, meta } = defineMeta({ /* ... */ });
-
-function Button_stories($$anchor, $$props) {
-    // ...
-}
-
-export default meta;
-
-import { createRuntimeStories } from "@storybook/addon-svelte-csf/internal/create-runtime-stories";
-
-const __stories = createRuntimeStories(Button_stories, meta);
-
-export const Primary = __stories["Primary"];
-export const Secondary = __stories["Secondary"];
-export const Large = __stories["Large"];
-export const Small = __stories["Small"];
-export const LongContent = __stories["LongContent"];
-```
-````
+<style>
+  .line.diff.add {
+    @apply bg-emerald-950;
+  }
+</style>

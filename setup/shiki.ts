@@ -1,5 +1,5 @@
 import { defineShikiSetup } from "@slidev/types";
-import { transformerMetaWordHighlight, transformerNotationWordHighlight } from "@shikijs/transformers";
+import { transformerMetaWordHighlight, transformerNotationDiff, transformerNotationWordHighlight } from "@shikijs/transformers";
 
 export default defineShikiSetup(() => {
 	return {
@@ -13,6 +13,7 @@ export default defineShikiSetup(() => {
 		transformers: [
 			//
             transformerMetaWordHighlight(),
+			transformerNotationDiff(),
 			transformerNotationWordHighlight(),
 		],
 	};
