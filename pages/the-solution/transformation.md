@@ -10,31 +10,6 @@ class: bg-emerald-900
 
 Transformation
 
----
-title: The Solution - Transformation - plan
-level: 3
-transition: slide-up
-layout: full
-class: bg-emerald-900
----
-
-# <carbon-chemistry /> Ingredients
-
-<v-clicks>
-
-1. <logos-svelte-icon /> `parse()` from <logos-svelte-icon /> `svelte/compiler`
-2. <logos-npm-icon /> `zimmerframe` for walking on the <logos-svelte-icon /> Svelte AST
-3. <logos-vitejs /> `@sveltejs/vite-plugin-svelte` to compile <logos-svelte-icon /> to <logos-javascript />
-4. <logos-javascript /> `parse()` from <logos-rollup /> `rollup`
-5. <logos-npm-icon /> `zimmerframe` for walking on the <logos-javascript /> JavaScript AST (ESTree) & modification
-6. <logos-npm-icon /> `magic-string` for source-maps
-7. <logos-npm-icon /> `esrap` to print modified <logos-javascript /> JavaScript AST
-
-Can you guess already [who is the mastermind]{class="text-secondary"} behind most of those packages?
-
-Yes, [@Rich-Harris](https://twitter.com/Rich_Harris).
-
-</v-clicks>
 
 ---
 title: The Solution - Transformation - export default
