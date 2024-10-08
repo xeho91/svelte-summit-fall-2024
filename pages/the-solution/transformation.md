@@ -317,12 +317,14 @@ This is [not]{class="text-secondary"} the way.
 
 [Why?]{text="color-secondary"}
 
-SCF.
+The concept of [SFC]{class="color-secondary"} (Single File Component).
+
+And <logos-svelte-icon /> Svelte components are [functions]{class="text-secondary"} (they were classes before - still, same issue).
 
 </v-clicks>
 
 ---
-title: The Solution - Transformation - Runtime stories - scf
+title: The Solution - Transformation - Runtime stories - SFC
 level: 3
 transition: fade
 layout: full
@@ -458,9 +460,10 @@ layout: statement
 class: bg-emerald-900
 ---
 
-<logos-svelte-icon /> Svelte [runes]{class="text-secondary"} or [syntax blocks]{class="text-secondary"} live inside the Single Component Function (SCF) scope.
+<logos-svelte-icon /> Svelte [runes]{class="text-secondary"} or [syntax blocks]{class="text-secondary"} live inside the Svelte component function scope.
 
 <v-clicks>
+Because Svelte uses [SFC]{class="color-secondary"} (Single File Component) concept.
 
 That's why the solution to access them is to create [runtime stories]{class="text-secondary"}.
 
