@@ -6,7 +6,7 @@ export default defineConfig({
 	],
 	theme: {
 		colors: {
-			primary: "#4A1011",
+			summit: "#4A1011",
 			secondary: "#B83B3A",
 		},
 	},
