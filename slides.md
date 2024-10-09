@@ -27,10 +27,10 @@ fonts:
   sans: Anton
   serif: Overpass
   mono: Fira Code
-theme: default
-transition: slide-up
+theme: ./theme
+transition: fade
 layout: intro
-class: bg-primary text-center
+class: bg-summit text-center
 ---
 
 <h1 class="text-6xl text-white">
@@ -49,16 +49,15 @@ Elevating <em class="underline">the DX</em><br>
   </a>
 </div>
 
-<PoweredBySlidev class="fixed bottom-10 left-10" />
-
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
+
 ---
 level: 2
 title: Presenters
 layout: two-cols
-class: bg-primary
+class: bg-summit
 transition: slide-left
 ---
 
@@ -129,6 +128,10 @@ transition: slide-left
 </ul>
 
 </div>
+
+---
+src: ./pages/introduction.md
+---
 
 ---
 src: ./pages/the-problem.md
