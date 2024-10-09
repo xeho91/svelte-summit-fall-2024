@@ -54,78 +54,26 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+title: Presenter
 level: 2
-title: Presenters
-layout: two-cols
-class: bg-summit
 transition: slide-left
+layout: center
+class: bg-summit
 ---
 
-<div class="h-full flex flex-col items-center justify-center">
-
-# Jeppe Reinhold
-
-<img
-    alt="Jeppe's Reinhold profile picture"
-    src="https://avatars.githubusercontent.com/u/5678122?v=4"
-    class="size-40 rounded-3xl border-secondary border-3 shadow-xl shadow-secondary"
-/>
-
-<p class="text-secondary"><logos-storybook-icon /> Storybook & <logos-chromatic-icon /> Chromatic</p>
-
-<ul>
-    <li>
-        <a
-            href="https://github.com/JReinhold"
-            class="!hover:text-secondary"
-        >
-            <carbon-logo-github /> @JReinhold
-        </a>
-    </li>
-    <li>
-        <a
-            href="https://twitter.com/DrReinhold"
-            class="!hover:text-secondary"
-        >
-            <carbon-logo-twitter /> @DrReinhold
-        </a>
-    </li>
-</ul>
-
-</div>
-
-::right::
-
-<div class="h-full flex flex-col items-center justify-center">
+<div class="flex flex-col items-center">
 
 # Mateusz Kadlubowski
 
-<img
-    alt="Mateusz's Kadlubowski profile picture"
-    src="https://avatars.githubusercontent.com/u/18627568?v=4"
-    class="size-40 rounded-3xl border-secondary border-3 shadow-2xl shadow-secondary"
-/>
+<p class="font-serif">
+Full-stack Developer & <logos-storybook-icon /> <strong>Contributor</strong>
+</p>
 
-<p class="text-secondary"><logos-storybook-icon /> Contributor</p>
+![Mateusz's Kadlubowski profile picture](https://avatars.githubusercontent.com/u/18627568){class="size-40 rounded-full border-secondary border-3 shadow-2xl shadow-secondary"}
 
-<ul>
-    <li>
-        <a
-            href="https://github.com/xeho91"
-            class="!hover:text-secondary"
-        >
-            <carbon-logo-github /> @xeho91
-        </a>
-    </li>
-    <li>
-        <a
-            href="https://twitter.com/xeho91"
-            class="!hover:text-secondary"
-        >
-            <carbon-logo-twitter /> @xeho91
-        </a>
-    </li>
-</ul>
+- <carbon-logo-github /> [@xeho91](https://github.com/xeho91)
+- <carbon-logo-twitter /> [@xeho91](https://twitter.com/xeho91)
+- <carbon-logo-discord /> [@xeho91](https://discord.com/channels/@xeho91)
 
 </div>
 
