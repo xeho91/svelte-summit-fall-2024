@@ -39,6 +39,14 @@ Elevating <em class="underline">the DX</em><br>
 <span class="text-secondary">for</span> <logos-svelte-icon /> Svelte
 </h1>
 
+<p class="!mt-8 text-3xl">
+Svelte Summit <strong>Fall 2024</strong>
+</p>
+
+<p class="!mt-10 font-serif text-2xl">
+Slides: INSERT URL HERE
+</p>
+
 <div class="abs-br m-6 flex gap-2">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
@@ -71,9 +79,9 @@ Full-stack Developer & <logos-storybook-icon /> <strong>Contributor</strong>
 
 ![Mateusz's Kadlubowski profile picture](https://avatars.githubusercontent.com/u/18627568){class="size-40 rounded-full border-secondary border-3 shadow-2xl shadow-secondary"}
 
+- <carbon-logo-discord /> [@xeho91](https://discord.com/channels/@xeho91)
 - <carbon-logo-github /> [@xeho91](https://github.com/xeho91)
 - <carbon-logo-twitter /> [@xeho91](https://twitter.com/xeho91)
-- <carbon-logo-discord /> [@xeho91](https://discord.com/channels/@xeho91)
 
 </div>
 
@@ -82,7 +90,7 @@ src: ./pages/introduction.md
 ---
 
 ---
-src: ./pages/the-problem.md
+src: ./pages/the-challenge.md
 ---
 
 ---
