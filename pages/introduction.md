@@ -9,6 +9,24 @@ class: bg-sky-950
 # **What** is <logos-storybook-icon /> Storybook?
 
 ---
+title: Introduction - Storybook - latest feature
+level: 3
+transition: fade
+layout: iframe-left
+url: https://www.youtube.com/embed/mWK3Y_1kmaM?si=ig0DtJk2QGLqe1vj
+class: bg-sky-950
+---
+
+<div class="ml-8 h-full flex flex-col justify-center">
+<h1 class="!leading-snug">
+<strong>Component Testing</strong><br>
+with <logos-storybook-icon /> Storybook<br>
+and <logos-vitest /> Vitest 
+</h1>
+<p class="font-serif">by Yann Braga</p>
+</div>
+
+---
 title: Introduction - Storybook - Svelte 5 support
 level: 3
 layout: full
@@ -40,38 +58,7 @@ for <logos-svelte-icon /> Svelte 5.
 </div>
 
 <div id="right">
-
-```ts
-// Button.stories.ts
-
-import type { Meta, StoryObj } from '@storybook/svelte';
-import { fn } from '@storybook/test';
-
-import Button from './button.svelte';
-
-const meta = {
-    title: 'Atom/Button',
-    component: Button,
-    tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-    args: { onclick: fn() },
-} satisfies Meta<Button>;
-
-export default meta;
-
-type Story = StoryObj<Button>;
-
-export const Primary: Story = {
-  args: { label: 'Button', primary: true },
-};
-
-export const Small: Story = {
-    args: { label: 'Button', size: 'small' },
-};
-```
-
+<<< @/snippets/regular-csf.stories.ts ts
 </div>
 
 ---
@@ -157,66 +144,8 @@ class: px-10 bg-sky-950 flex flex-row gap-col-12 justify-end
 <div id="left" class="self-center justify-self-end w-fit">
 
 ````md magic-move
-```ts
-// Button.stories.ts
-
-import type { Meta, StoryObj } from '@storybook/svelte';
-import { fn } from '@storybook/test';
-
-import Button from './button.svelte';
-
-const meta = {
-    title: 'Atom/Button',
-    component: Button,
-    tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-    args: { onclick: fn() },
-} satisfies Meta<Button>;
-
-export default meta;
-
-type Story = StoryObj<Button>;
-
-export const Primary: Story = {
-  args: { label: 'Button', primary: true },
-};
-
-export const Small: Story = {
-    args: { label: 'Button', size: 'small' },
-};
-```
-```svelte
-<!-- Button.stories.svelte -->
-
-<script context="module">
-    import { defineMeta } from '@storybook/addon-svelte-csf';
-    import { fn } from '@storybook/test';
-
-    import Button from './button.svelte';
-
-    export const { Story } = defineMeta({
-        title: 'Atom/Button',
-        component: Button,
-        tags: ['autodocs'],
-        argTypes: {
-            backgroundColor: { control: 'color' },
-        },
-        args: { onclick: fn() },
-    });
-</script>
-
-<Story
-    name="Primary"
-    args={{ label: 'Button', primary: true }}
-/>
-
-<Story
-    name="Small"
-    args={{ label: 'Button', size: 'small' }}
-/>
-```
+<<< @/snippets/regular-csf.stories.ts ts
+<<< @/snippets/svelte-csf.stories.svelte svelte
 ````
 
 </div>
