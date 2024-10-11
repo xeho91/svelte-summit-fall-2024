@@ -94,9 +94,5 @@ src: ./pages/the-challenge.md
 ---
 
 ---
-src: ./pages/the-solution.md
----
-
----
 src: ./pages/takeaways.md
 ---

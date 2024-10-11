@@ -1,10 +1,10 @@
 ---
 title: The Challenge - indexing
 level: 2
-transition: fade
 layout: image-left
 image: /storybook-sidebar.png
 class: bg-pink-950 content-center
+transition: fade
 ---
 
 <div class="ml-2">
@@ -41,7 +41,7 @@ level: 2
 layout: image-left
 image: /storybook-sidebar.png
 class: bg-pink-950
-transition: slide-left
+transition: fade
 ---
 
 <h1 class="!text-xl !mb-2">
@@ -56,7 +56,7 @@ level: 2
 layout: image-left
 image: /storybook-sidebar.png
 class: bg-pink-950 content-center
-transition: fade
+transition: slide-left
 ---
 
 <div class="ml-4">

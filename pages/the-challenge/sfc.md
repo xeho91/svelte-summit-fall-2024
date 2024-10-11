@@ -15,7 +15,7 @@ from the <strong>compiled output</strong> of <logos-svelte-icon /> Svelte file?
 </p>
 
 ---
-title: The challenge - SFC concept
+title: The challenge - solution
 level: 3
 layout: statement
 class: bg-indigo-950 text-center
@@ -30,9 +30,45 @@ We have to <strong>transform</strong> the compiled output.
 <p class="!mt-8 font-serif text-4xl">
 <logos-vitejs /> <a href="https://vite.dev/guide/api-plugin#transforming-custom-file-types">Vite <strong>Plugin API</strong></a> can help us with that.
 </p>
+</v-click>
 
-<p class="!mt-10 text-3xl">
+<v-click>
+<p class="!mt-16 text-3xl">
 <logos-vitejs /> <a href="https://github.com/antfu-collective/vite-plugin-inspect"><code>vite-plugin-inspect</code></a>
+</p>
+</v-click>
+
+---
+title: The challenge - SFC - wrong approach
+level: 3
+layout: center
+class: bg-indigo-950
+transition: fade
+---
+
+<h1 class="!mb-10">
+You might have thought of it...
+</h1>
+
+````md magic-move
+```svelte
+<Story
+    name="Primary"
+    args={{ primary: true }}
+/>
+```
+```js
+export const Primary = {
+    args: { primary: true },
+};
+```
+````
+<v-click>
+
+<twemoji-cross-mark class="fixed top-[210px] left-[430px] text-8xl" />
+
+<p class="!mt-12 font-serif text-3xl text-center">
+This is <strong>NOT</strong> the way.
 </p>
 </v-click>
 
@@ -43,6 +79,8 @@ layout: center
 class: bg-indigo-950
 transition: slide-left
 ---
+
+<twemoji-shortcake  class="justify-self-center block mb-12 text-4xl" />
 
 # Improved <logos-typescript-icon /> type-safety
 
@@ -55,12 +93,12 @@ transition: slide-left
 ```
 
 <v-click>
-<div class="shout-out font-serif text-3xl">
+<div class="shout-out mt-10 font-serif text-3xl">
 
 <twemoji-heart-hands /> Shout-out to:
 
 1. <carbon-logo-twitter /> [@dummdidumm](https://x.com/dummdidumm_)
-2. <carbon-logo-discord /> Motionless Train
+2. <carbon-logo-discord /> MotionlessTrain
 
 </div>
 
