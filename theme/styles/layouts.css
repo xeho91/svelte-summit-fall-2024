@@ -36,6 +36,7 @@
   }
 
   strong {
+    @apply font-700;
     @apply text-secondary;
   }
 }
