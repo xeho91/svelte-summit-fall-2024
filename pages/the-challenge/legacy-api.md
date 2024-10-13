@@ -13,7 +13,6 @@ The Challenge - <strong>backwards compatiblity</strong>
 How did we adopt this philosophy to <strong>support legacy API</strong>?
 </p>
 
-<v-click>
 <div class="mt-10 font-serif text-xl">
 <p>
 <twemoji-heart-hands /> Shout-out to:
@@ -25,7 +24,6 @@ How did we adopt this philosophy to <strong>support legacy API</strong>?
 for their invaluable feedback!
 
 </div>
-</v-click>
 
 ---
 title: The challenge - backwards compatiblity - svelte-ast-print

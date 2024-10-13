@@ -2,11 +2,41 @@
 title: Introduction - Storybook
 level: 2
 transition: fade
-layout: full
-class: bg-sky-950
+layout: center
+class: bg-sky-950 p-6
 ---
 
-# **What** is <logos-storybook-icon /> Storybook?
+<h1 class="mt-4">
+<strong>What</strong> is <logos-storybook-icon /> Storybook?
+</h1>
+
+<div class="flex flex-row gap-col-4">
+<div class="">
+
+![Storybook preview](/storybook-preview.png){class="w-[950px]"}
+
+</div>
+
+<div>
+<p class="text-2xl !leading-snug">
+A frontend tool for <strong>building UI components</strong> faster and easier.
+</p>
+
+<div class="font-serif text-xl">
+
+- **sandbox** to build components<br> [in isolation]{class="decoration-underline"},
+- **catalog** all components and states,
+- has a big and **thriving community**.
+
+</div>
+</div>
+</div>
+
+<p class="text-2xl">
+<a>
+<carbon-direct-link /> Mealdrop "real-world" Storybook example by Yann Braga
+</a>
+</p>
 
 ---
 title: Introduction - Storybook - latest feature
@@ -34,7 +64,6 @@ class: px-10 bg-sky-950 flex flex-row justify-end gap-col-10
 ---
 
 <div id="left" class="flex flex-col justify-center">
-<v-clicks>
 
 <p class="text-center text-4xl !leading-snug">
 <logos-storybook-icon /> Storybook <strong>regular CSF</strong><br>
@@ -53,8 +82,6 @@ for <logos-svelte-icon /> Svelte 5.
     <carbon-direct-link /> More on <strong>how to set up stories</strong>
     </a>
 </p>
-
-</v-clicks>
 </div>
 
 <div id="right">

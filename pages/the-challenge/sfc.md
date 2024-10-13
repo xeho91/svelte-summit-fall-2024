@@ -71,35 +71,3 @@ export const Primary = {
 This is <strong>NOT</strong> the way.
 </p>
 </v-click>
-
----
-title: The challenge - SFC - type-safety
-level: 3
-layout: center
-class: bg-indigo-950
-transition: slide-left
----
-
-<twemoji-shortcake  class="justify-self-center block mb-12 text-4xl" />
-
-# Improved <logos-typescript-icon /> type-safety
-
-```svelte {all|2|5}
-<script module>
-    const { Story } = defineMeta({ /* ... */ });
-</script>
-
-<Story name="Primary" args={{ primary: true }} />
-```
-
-<v-click>
-<div class="shout-out mt-10 font-serif text-3xl">
-
-<twemoji-heart-hands /> Shout-out to:
-
-1. <carbon-logo-twitter /> [@dummdidumm](https://x.com/dummdidumm_)
-2. <carbon-logo-discord /> MotionlessTrain
-
-</div>
-
-</v-click>
