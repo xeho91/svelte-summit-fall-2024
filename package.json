@@ -19,6 +19,7 @@
   "devDependencies": {
     "@shikijs/transformers": "1.21.0",
     "@slidev/types": "0.49.29",
+    "playwright-chromium": "1.48.0",
     "shiki": "1.21.0"
   }
 }
