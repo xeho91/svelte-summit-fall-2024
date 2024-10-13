@@ -39,12 +39,8 @@ Elevating <em class="underline">the DX</em><br>
 <span class="text-secondary">for</span> <logos-svelte-icon /> Svelte
 </h1>
 
-<p class="!mt-8 text-3xl">
-Svelte Summit <strong>Fall 2024</strong>
-</p>
-
 <p class="!mt-10 font-serif text-2xl">
-Slides: INSERT URL HERE
+<carbon-direct-link /> <a href="https://xeho91.github.io/svelte-summit-fall-2024">xeho91.github.io/svelte-summit-fall-2024</a>
 </p>
 
 <div class="abs-br m-6 flex gap-2">

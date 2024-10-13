@@ -6,7 +6,7 @@
 
     import Button from './Button.svelte';
 
-    export const { Story } = defineMeta({
+    const { Story } = defineMeta({
         title: 'Atom/Button',
         component: Button,
         tags: ['autodocs'],
