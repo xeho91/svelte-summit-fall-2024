@@ -35,6 +35,14 @@ transition: fade
 
 <<< @/snippets/regular-csf.stories.ts ts {all|8,9,11,14,16,20,22,24,26}
 
+<v-click at="1">
+
+<v-drag-arrow class="color-secondary" pos="504,475,-322,-23"/>
+<v-drag-arrow class="color-secondary" pos="524,204,-364,85"/>
+<v-drag-arrow class="color-secondary" pos="502,404,-296,0"/>
+
+</v-click>
+
 ---
 title: The Challenge - indexing - Svelte CSF
 level: 2

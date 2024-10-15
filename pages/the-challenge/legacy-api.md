@@ -33,23 +33,18 @@ class: bg-lime-950
 transition: fade
 ---
 
-<v-click>
 <h1>
 <twemoji-sparkles /> Birth of <logos-npm-icon /><code>svelte-ast-print</code>
 </h1>
-</v-click>
 
 <v-click>
 <p class="!mt-10 font-serif text-3xl">
 Still in early stages, and it <span class="decoration-underline decoration-secondary">doesn't support</span> <logos-typescript-icon /><strong class="text-secondary">TypeScript</strong> syntax... yet.
 </p>
-</v-click>
 
-<v-click>
 <p class="font-serif text-3xl">
 <twemoji-heart-hands /> Shout-out to <a href="https://github.com/manuel3108">@manuel3108</a> for working on it.
 </p>
-
 </v-click>
 
 ---
@@ -65,7 +60,7 @@ Legacy support is now <strong>opt-in</strong>.
 </p>
 
 ````md magic-move
-```ts {all|6-9|8}
+```ts {all|7-10}
 // .storybook/main.ts
 
 import type { StorybookConfig } from "@storybook/svelte-vite";
@@ -81,7 +76,7 @@ const config = {
 
 export default config;
 ```
-```ts {8-13}
+```ts {9-14}
 // .storybook/main.ts
 
 import type { StorybookConfig } from "@storybook/svelte-vite";

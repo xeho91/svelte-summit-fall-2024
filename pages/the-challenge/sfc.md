@@ -14,6 +14,12 @@ How do we help <logos-storybook-icon /> Storybook render stories<br>
 from the <strong>compiled output</strong> of <logos-svelte-icon /> Svelte file?
 </p>
 
+<v-click>
+
+![Storybook stories body](/storybook-body.png){class="fixed inset-0 m-auto border-secondary border-2 w-[580px]"}
+
+</v-click>
+
 ---
 title: The challenge - solution
 level: 3
