@@ -13,7 +13,7 @@ class: bg-sky-950 p-6
 <div class="flex flex-row gap-col-4">
 <div class="">
 
-![Storybook preview](/storybook-preview.png){class="w-[950px]"}
+![Storybook preview](/storybook-preview.png){class="w-[950px] border-secondary border-2"}
 
 </div>
 
@@ -38,6 +38,21 @@ A frontend tool for <strong>building UI components</strong> faster and easier.
 </a>
 </p>
 
+<!--
+Is a tool which enables having a productive,
+
+collaborative workshop for developers and also designers.
+
+To develop, document, test UI components and pages.
+
+In isolation.
+
+Meaning I don't need to run the whole app architecture,
+nor worry about the business logic to start working on particular UI element.
+
+Inside the Storybook I can cover **every possible** visual edge case and have ability to write tests for them.
+-->
+
 ---
 title: Introduction - Storybook - latest feature
 level: 3
@@ -56,6 +71,20 @@ and <logos-vitest /> Vitest
 <p class="font-serif">by Yann Braga</p>
 </div>
 
+<!--
+Storybook has also rich ecosystem.
+
+If you have had a chance to watch ViteConf this month, where Yann from Storybook core team made a talk about recent integration with Vitest.
+
+I don't know about you… but it got me very excited.
+
+That’s because I can finally include stories tests
+
+in my favourite testing framework
+
+without need to host Storybook instance!
+-->
+
 ---
 title: Introduction - Storybook - Svelte 5 support
 level: 3
@@ -63,7 +92,7 @@ layout: full
 class: px-10 bg-sky-950 flex flex-row justify-end gap-col-10
 ---
 
-<div id="left" class="flex flex-col justify-center">
+<div id="left" class="flex flex-col self-center">
 
 <p class="text-center text-4xl !leading-snug">
 <logos-storybook-icon /> Storybook <strong>regular CSF</strong><br>
@@ -84,9 +113,15 @@ for <logos-svelte-icon /> Svelte 5.
 </p>
 </div>
 
-<div id="right">
+<div id="right" class="self-center">
 <<< @/snippets/regular-csf.stories.ts ts
 </div>
+
+<v-click>
+
+![Example preview](/example-preview.png){class="fixed inset-0 m-auto w-[900px] border-secondary border-2"}
+
+</v-click>
 
 ---
 title: Introduction - Storybook - challenges
@@ -154,26 +189,25 @@ class: px-10 bg-sky-950 flex flex-row gap-col-12 justify-end
 
 <div id="right" class="self-center">
 
-<v-click at="1" hide>
-<p class="!text-5xl">
-<logos-typescript-icon /> Regular CSF
-</p>
-</v-click>
+<v-click>
 
-<v-click at="1" show>
-<p class="!text-5xl">
+<p class="!text-2xl">
 <logos-svelte-icon /> Svelte CSF
 </p>
+
+<<< @/snippets/svelte-csf.stories.svelte svelte
 </v-click>
+
 
 </div>
 
 <div id="left" class="self-center justify-self-end w-fit">
 
-````md magic-move
+<p class="!text-2xl">
+<logos-typescript-icon /> Regular CSF
+</p>
+
 <<< @/snippets/regular-csf.stories.ts ts
-<<< @/snippets/svelte-csf.stories.svelte svelte
-````
 
 </div>
 
@@ -252,6 +286,6 @@ class: bg-sky-950
 </h1>
 
 <p class="font-serif text-2xl !leading-relaxed">
-What are this addon <strong>challenges</strong> to make it work<br>
+What are this addon <strong>challenges</strong> to make it possible<br>
 and <strong>bridge the gap</strong> with regular CSF.
 </p>
